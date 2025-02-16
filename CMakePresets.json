@@ -73,7 +73,7 @@
         "binaryDir": "${sourceDir}/build/rel",
         "inherits": ["base-cfg"],
         "cacheVariables": {
-            "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+            "CMAKE_BUILD_TYPE": "Release"
         }
     },
     {
