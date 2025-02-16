@@ -7,8 +7,9 @@ project(adrtxt
     LANGUAGES CXX)
 
 if(NOT DEFINED CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 23)
+  set(CMAKE_CXX_STANDARD 20)
 endif()
+message(STATUS "C++ Standard ${CMAKE_CXX_STANDARD}")
 
 include(cmake/top-level.cmake)
 include(cmake/compile-options.cmake)
