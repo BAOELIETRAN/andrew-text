@@ -38,7 +38,7 @@ jobs:
       run: cmake --preset release-ci
 
     - name: Build
-      run: cmake --build build/rel
+      run: cmake --build build/rel --config Release
 
     - name: Test
       working-directory: build/rel/src
