@@ -1,3 +1,8 @@
+/**
+ * @file lib.hpp
+ * @brief Some gibberish declarations
+ */
+
 #pragma once
 
 namespace lib {

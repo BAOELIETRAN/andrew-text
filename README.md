@@ -12,10 +12,6 @@ See the [building](BUILDING.md) document.
 
 See the [contributing](CONTRIBUTING.md) document.
 
-## Licensing
-
-- GPL3. Read [license](LICENSE).
-
 ## Todo
 
 - [x] Option for linking with sanitizers in dev mode.
