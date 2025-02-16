@@ -33,4 +33,10 @@ cmake --build build/dev
 # run tests
 ctest --test-dir build/dev/src
 # generate documents
+cmake --build build/dev --target docs
+# generate coverage report
+# for now, it's a bit manual
+cd build/dev
+gcovr -r ../.. --html coverage.html
+cd ../..
 ```
