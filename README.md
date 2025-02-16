@@ -1,45 +1,31 @@
-# template
-
-> Yet another CMake template of mine.
+# Just a text editor: adrtxt
 
 ## Why
 
-I took a look at `cmake-init` and modified to my own use:
-
-- Linking with sanitizers (ASan, UBSan, and such).
-
-## How to use
-
-Modify [this script](tools/sed.sh), and run it at the project root.
-
-```bash
-sh ./tools/sed.sh
-```
-
-## Todo
-
-- [x] Package manager (conan).
-- [x] At least it compiles.
-- [ ] CI/CD (Windows causing trouble. Need more testing).
-- [ ] Install (technically can install, not tested yet).
-- [ ] CPack.
-- [x] Licensing (it's a template. Probably just slap Unlicense on).
-
-Modify the `project` section in the main CMake file to that of your project.
-
-<!--
-    The stuff above this comment should be deleted if you decide to use this
-    template.
--->
+- For fun.
 
 ## Building
 
-See the BUILDING document.
+See the [building](BUILDING.md) document.
 
 ## Contributing
 
-See the CONTRIBUTING document.
+See the [contributing](CONTRIBUTING.md) document.
 
 ## Licensing
 
-Choose your own!
+- GPL3. Read [license](LICENSE).
+
+## Todo
+
+- [x] Option for linking with sanitizers in dev mode.
+- [x] Package manager.
+- [x] At least it compiles.
+- [x] Regression testing with GitHub Actions.
+- [ ] CI/CD.
+- [x] Doxygen.
+- [ ] Coverage. For now, manual use of `gcovr` and `genhtml` needed.
+- [ ] Install.
+- [ ] CPack.
+- [x] Licensing.
+- [ ] Actually starting to code.
