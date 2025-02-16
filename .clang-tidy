@@ -1,0 +1,26 @@
+---
+Checks:          "*,\
+                  -google-*,\
+                  -altera-*,\
+                  -fuchsia-*,\
+                  -llvm*,\
+                  -cppcoreguidelines-non-private-member-variables-in-classes,\
+                  -misc-non-private-member-variables-in-classes"
+WarningsAsErrors: ''
+HeaderFileExtensions:
+  - ''
+  - h
+  - hh
+  - hpp
+  - hxx
+ImplementationFileExtensions:
+  - c
+  - cc
+  - cpp
+  - cxx
+HeaderFilterRegex: ''
+ExcludeHeaderFilterRegex: ''
+FormatStyle:     none
+SystemHeaders:   false
+...
+

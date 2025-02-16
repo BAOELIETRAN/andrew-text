@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+
+  pull_request:
+    branches:
+      - master
+
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: Install conan
+      run: pip3 install conan
+
+    - name: Create profile
+      run: conan profile detect --force
+
+    - name: Install deps
+      run: conan install . -s build_type=RelWithDebInfo -b missing
+
+    - name: Configure
+      run: cmake --preset release-ci
+
+    - name: Build
+      run: cmake --build build/rel
+
+    - name: Test
+      working-directory: build/rel/src
+      run: ctest --output-on-failure
