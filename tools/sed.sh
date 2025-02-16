@@ -4,7 +4,7 @@
 
 cmake_files=$(find . -type f -name 'CMakeLists.txt' -or -name "*.cmake")
 # change the name to that of your new project
-newname="myproj"
+newname="adrtxt"
 
 for file in ${cmake_files}; do
   sed -i "s/template/${newname}/g" "${file}"

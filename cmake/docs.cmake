@@ -1,8 +1,8 @@
 include(CMakeDependentOption)
-cmake_dependent_option(template_DOCS
+cmake_dependent_option(adrtxt_DOCS
   "Whether to generate documents with Doxygen"
-  ON "PROJECT_IS_TOP_LEVEL;template_DEV" OFF)
-if(template_DOCS)
+  ON "PROJECT_IS_TOP_LEVEL;adrtxt_DEV" OFF)
+if(adrtxt_DOCS)
   find_package(Doxygen REQUIRED)
   set(DOXYGEN_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/docs")
   configure_file(${PROJECT_SOURCE_DIR}/docs/Doxyfile.in
