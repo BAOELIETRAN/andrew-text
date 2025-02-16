@@ -3,6 +3,8 @@ build/
 .vscode/
 .idea/
 .clangd
+.cache/
+.ccls-cache/
 conan/
 CMakeUserPresets.json
 compile_commands.json
