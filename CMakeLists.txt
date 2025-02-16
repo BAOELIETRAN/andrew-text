@@ -6,6 +6,10 @@ project(adrtxt
     DESCRIPTION "Just a text editor"
     LANGUAGES CXX)
 
+if(NOT DEFINED CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD 23)
+endif()
+
 include(cmake/top-level.cmake)
 include(cmake/compile-options.cmake)
 include(cmake/folders.cmake)

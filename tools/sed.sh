@@ -2,7 +2,7 @@
 
 # simple script to change the project name
 
-cmake_files=$(find . -type f -name 'CMakeLists.txt' -or -name "*.cmake")
+cmake_files=$(find . -type f -name 'CMakeLists.txt' -or -name "*.cmake" -or -name "*.json")
 # change the name to that of your new project
 newname="adrtxt"
 
